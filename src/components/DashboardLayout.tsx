@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LayoutDashboardIcon, BellIcon, RadioIcon, HomeIcon, NetworkIcon, BarChart3Icon, InboxIcon, MenuIcon, XIcon, ChevronDownIcon, ChevronRightIcon, SatelliteIcon, LogOutIcon, ShieldCheckIcon, PhoneIcon, SettingsIcon, UserIcon } from 'lucide-react';
+import { LayoutDashboardIcon, BellIcon, RadioIcon, HomeIcon, NetworkIcon, InboxIcon, MenuIcon, XIcon, ChevronDownIcon, ChevronRightIcon, SatelliteIcon, LogOutIcon, PhoneIcon, SettingsIcon, UserIcon } from 'lucide-react';
 import { LogoutConfirmationModal } from './LogoutConfirmationModal';
 import { useAuth } from '../hooks/useAuth';
 interface DashboardLayoutProps {
@@ -23,7 +23,6 @@ export function DashboardLayout({
   userMode = false
 }: DashboardLayoutProps) {
   const location = useLocation();
-  const navigate = useNavigate();
   const {
     logout,
     user
