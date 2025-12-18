@@ -285,7 +285,7 @@ export function LandingPage() {
                   muted
                   loop
                   playsInline
-                  controls
+                  disablePictureInPicture
                 >
                   Your browser does not support the video tag.
                 </video>
@@ -449,7 +449,7 @@ export function LandingPage() {
                   muted
                   loop
                   playsInline
-                  controls
+                  disablePictureInPicture
                 >
                   Your browser does not support the video tag.
                 </video>
