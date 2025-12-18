@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { ShieldCheckIcon, BellIcon, BarChart3Icon, MapPinIcon, WifiIcon, ZapIcon, ArrowRightIcon, CheckCircleIcon, MenuIcon, XIcon, SparklesIcon, TrendingUpIcon, ShieldIcon, ActivityIcon, SirenIcon, LightbulbIcon, SmartphoneIcon, MonitorIcon, BoxIcon } from 'lucide-react';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { LoginSignupModal } from '../components/LoginSignupModal';
@@ -598,19 +597,24 @@ export function LandingPage() {
               </h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-sm text-slate-400 light:text-slate-600 hover:text-white light:hover:text-slate-900 transition-colors">
+                  <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="text-sm text-slate-400 light:text-slate-600 hover:text-white light:hover:text-slate-900 transition-colors">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#features" onClick={(e) => { e.preventDefault(); scrollToSection('features'); }} className="text-sm text-slate-400 light:text-slate-600 hover:text-white light:hover:text-slate-900 transition-colors">
                     Features
                   </a>
                 </li>
                 <li>
-                  <a href="#how-it-works" className="text-sm text-slate-400 light:text-slate-600 hover:text-white light:hover:text-slate-900 transition-colors">
+                  <a href="#how-it-works" onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }} className="text-sm text-slate-400 light:text-slate-600 hover:text-white light:hover:text-slate-900 transition-colors">
                     How It Works
                   </a>
                 </li>
                 <li>
-                  <Link to="/app" className="text-sm text-slate-400 light:text-slate-600 hover:text-white light:hover:text-slate-900 transition-colors">
-                    Dashboard
-                  </Link>
+                  <a href="#what-you-get" onClick={(e) => { e.preventDefault(); scrollToSection('what-you-get'); }} className="text-sm text-slate-400 light:text-slate-600 hover:text-white light:hover:text-slate-900 transition-colors">
+                    Purchase Device
+                  </a>
                 </li>
               </ul>
             </div>
