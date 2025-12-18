@@ -122,10 +122,8 @@ export function DashboardLayout({
         {/* Header */}
         <div className="relative z-10 p-6 border-b border-slate-800 dark:border-slate-700">
           <Link to={userMode ? '/app/user-dashboard' : '/app'} className="flex items-center gap-3 group">
-            <div className="relative w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center glow-red transition-transform duration-300 group-hover:scale-110 ring-2 ring-red-500/30 ring-offset-2 ring-offset-slate-900">
-              <div className="w-10 h-10 bg-slate-900/40 rounded-full flex items-center justify-center ring-1 ring-white/10 p-1.5">
-                <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-contain" />
-              </div>
+            <div className="relative w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center glow-red transition-transform duration-300 group-hover:scale-110 ring-2 ring-red-500/30 ring-offset-2 ring-offset-slate-900 overflow-hidden">
+              <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-cover rounded-full" />
               <div className="absolute inset-0 bg-red-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
             </div>
             <div>
@@ -202,10 +200,8 @@ export function DashboardLayout({
       <div className="lg:hidden fixed top-0 left-0 right-0 z-[60] glass-dark border-b border-slate-800 dark:border-slate-700 h-16">
         <div className="flex items-center justify-between px-4 h-full">
           <Link to={userMode ? '/app/user-dashboard' : '/app'} className="flex items-center gap-2">
-            <div className="relative w-8 h-8 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-1 ring-red-500/30 ring-offset-1 ring-offset-slate-900">
-              <div className="w-7 h-7 bg-slate-900/40 rounded-full flex items-center justify-center ring-1 ring-white/10 p-1">
-                <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-contain" />
-              </div>
+            <div className="relative w-8 h-8 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-1 ring-red-500/30 ring-offset-1 ring-offset-slate-900 overflow-hidden">
+              <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-cover rounded-full" />
             </div>
             <div>
               <span className="text-base font-bold text-white block">
@@ -254,10 +250,8 @@ export function DashboardLayout({
               {/* Menu Header with Close Button */}
               <div className="flex items-center justify-between p-4 border-b border-slate-800">
                 <Link to={userMode ? '/app/user-dashboard' : '/app'} className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                  <div className="relative w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-1 ring-red-500/30">
-                    <div className="w-9 h-9 bg-slate-900/40 rounded-full flex items-center justify-center ring-1 ring-white/10 p-1.5">
-                      <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-contain" />
-                    </div>
+                  <div className="relative w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-1 ring-red-500/30 overflow-hidden">
+                    <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-cover rounded-full" />
                   </div>
                   <div>
                     <span className="text-lg font-bold text-white block">

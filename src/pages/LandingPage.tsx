@@ -133,10 +133,8 @@ export function LandingPage() {
             {/* Logo */}
             <div className="flex items-center gap-2 sm:gap-3">
               <div className="relative group">
-                <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-2 ring-red-500/30 ring-offset-2 ring-offset-slate-950 light:ring-offset-white">
-                  <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-slate-900/40 light:bg-white/40 rounded-full flex items-center justify-center ring-1 ring-white/10 p-1 sm:p-1.5">
-                    <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3 Logo" className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
-                  </div>
+                <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-2 ring-red-500/30 ring-offset-2 ring-offset-slate-950 light:ring-offset-white overflow-hidden">
+                  <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3 Logo" className="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
                 </div>
                 <div className="absolute inset-0 bg-red-500 rounded-full blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
               </div>
@@ -576,10 +574,8 @@ export function LandingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
             <div className="sm:col-span-2">
               <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <div className="relative w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-2 ring-red-500/30 ring-offset-2 ring-offset-slate-950 light:ring-offset-white">
-                  <div className="w-7 h-7 sm:w-9 sm:h-9 bg-slate-900/40 light:bg-white/40 rounded-full flex items-center justify-center ring-1 ring-white/10 p-1 sm:p-1.5">
-                    <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-contain" />
-                  </div>
+                <div className="relative w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center ring-2 ring-red-500/30 ring-offset-2 ring-offset-slate-950 light:ring-offset-white overflow-hidden">
+                  <img src="/Gemini_Generated_Image_gmlzg8gmlzg8gmlz.png" alt="FIREGUARD3" className="w-full h-full object-cover rounded-full" />
                 </div>
                 <span className="text-lg sm:text-xl font-bold text-white light:text-slate-900">
                   FIRE<span className="text-gradient-fire">GUARD3</span>
