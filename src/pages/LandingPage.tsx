@@ -52,10 +52,6 @@ export function LandingPage() {
     setLoginModalTab('login');
     setLoginModalOpen(true);
   };
-  const handleOpenSignupModal = () => {
-    setLoginModalTab('signup');
-    setLoginModalOpen(true);
-  };
   const features = [{
     icon: ShieldCheckIcon,
     title: 'Real-Time Detection',
@@ -228,7 +224,7 @@ export function LandingPage() {
                 the Philippines with real-time detection and instant alerts.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2 sm:pt-4">
-                <button onClick={handleOpenSignupModal} className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl font-semibold hover:from-red-700 hover:to-red-800 transition-all glow-red btn-press focus-ring flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl hover:shadow-red-500/50 text-sm sm:text-base">
+                <button onClick={handleOpenLoginModal} className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl font-semibold hover:from-red-700 hover:to-red-800 transition-all glow-red btn-press focus-ring flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl hover:shadow-red-500/50 text-sm sm:text-base">
                   Get Started
                   <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
